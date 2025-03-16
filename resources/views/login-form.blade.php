@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-</head>
+@extends('layouts.app')
+
+@section('content')
 <body>
     <div class="login-form">
         <h2>Login</h2>
@@ -25,4 +20,4 @@
         </form>
     </div>
 </body>
-</html>
+@endsection
