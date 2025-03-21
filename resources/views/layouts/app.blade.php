@@ -25,6 +25,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/login') }}">Login</a>
                 </li>
+                @if (Auth::check())
+                    <li class="nav-item">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="nav-link btn btn-link" style="display: inline; padding: 0; border: none; background: none;">Logout</button>
+                        </form>
+                    </li>
+                @endif
             </ul>
         </div>
     </div>
